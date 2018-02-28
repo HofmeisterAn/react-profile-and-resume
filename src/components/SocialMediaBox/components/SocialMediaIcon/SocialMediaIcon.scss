@@ -1,0 +1,11 @@
+@import "../../../../default.scss";
+
+.social-media-icon {
+  color: $welcome-color;
+  font-size: 1.5em;
+  padding: 0 0.5em;
+}
+
+a:hover {
+  color: $welcome-color;
+}

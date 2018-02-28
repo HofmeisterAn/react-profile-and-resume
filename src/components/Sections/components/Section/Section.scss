@@ -1,0 +1,44 @@
+@import "../../../../default.scss";
+
+.title {
+  white-space: nowrap;
+}
+
+.date {
+  @extend .light-text;
+  float: right;
+}
+
+.time-since {
+  @extend .light-text;
+  display: none;
+}
+
+.content {
+  @extend .component;
+  @extend .normal-text;
+}
+
+.hypens {
+  @include vendor-prefix(hyphens, auto);
+}
+
+@media (max-width: 575.98px) {
+  .date {
+    display: none;
+  }
+  .time-since {
+    display: block;
+    float: right;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1100px) {
+  .date {
+    display: none;
+  }
+  .time-since {
+    display: block;
+    float: right;
+  }
+}

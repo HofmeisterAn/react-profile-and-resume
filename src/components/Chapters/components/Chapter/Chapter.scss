@@ -1,0 +1,26 @@
+@import "../../../../default.scss";
+
+.title {
+  color: $highlight-color-1;
+  text-transform: uppercase;
+}
+
+@media (max-width: 575.98px) {
+  :global {
+    .col-3 {
+      flex: none;
+      max-width: none;
+    }
+  }
+  :global {
+    .col-9 {
+      flex: none;
+      max-width: none;
+    }
+  }
+  :global {
+    .col-9 .container-fluid {
+      padding: 0;
+    }
+  }
+}

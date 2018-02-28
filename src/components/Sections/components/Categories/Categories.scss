@@ -1,0 +1,39 @@
+@import "../../../../default.scss";
+
+.categories {
+  @extend .component;
+}
+
+.category h6 {
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.category ul {
+  @extend .simple-list;
+}
+
+.category ul li {
+  @extend .light-text;
+  font-size: 0.9em;
+}
+
+@media (max-width: 575.98px) {
+  .categories {
+    padding-bottom: 0;
+    display: inline-block;
+  }
+  .category ul {
+    padding-bottom: 1.5em;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1100px) {
+  .categories {
+    padding-bottom: 0;
+    display: inline-block;
+  }
+  .category ul {
+    padding-bottom: 1.5em;
+  }
+}

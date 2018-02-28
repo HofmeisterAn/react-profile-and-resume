@@ -1,0 +1,28 @@
+@import "default.scss";
+
+/* catamaran-200 - latin */
+@font-face {
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Catamaran ExtraLight"), local("Catamaran-ExtraLight"), url("./assets/fonts/catamaran-v4-latin-200.woff2") format("woff2"),
+    url("./assets/fonts/catamaran-v4-latin-200.woff") format("woff");
+}
+
+/* catamaran-regular - latin */
+@font-face {
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Catamaran Regular"), local("Catamaran-Regular"), url("./assets/fonts/catamaran-v4-latin-regular.woff2") format("woff2"),
+    url("./assets/fonts/catamaran-v4-latin-regular.woff") format("woff");
+}
+
+/* catamaran-600 - latin */
+@font-face {
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Catamaran SemiBold"), local("Catamaran-SemiBold"), url("./assets/fonts/catamaran-v4-latin-600.woff2") format("woff2"),
+    url("./assets/fonts/catamaran-v4-latin-600.woff") format("woff");
+}

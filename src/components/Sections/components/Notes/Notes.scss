@@ -1,0 +1,13 @@
+@import "../../../../default.scss";
+
+.notes ul {
+  @extend .simple-list;
+  @extend .component;
+}
+
+.notes ul li {
+  @extend .light-text;
+  font-size: 0.9em;
+  list-style-type: disc;
+  list-style-position: inside;
+}
