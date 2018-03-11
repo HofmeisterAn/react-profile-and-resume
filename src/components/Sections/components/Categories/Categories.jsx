@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "reactstrap";
-import { isNull } from "../../../../services/api/Common/index.js";
+import { isNull } from "../../../../services/api/Common/index";
 
 import "./Categories.scss";
 

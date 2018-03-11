@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import Statement from "./components/Statement/Statement.jsx";
+import Statement from "./components/Statement/Statement";
 
-import { isNull } from "../../services/api/Common/index.js";
+import { isNull } from "../../services/api/Common/index";
 
 import "./Statements.scss";
 

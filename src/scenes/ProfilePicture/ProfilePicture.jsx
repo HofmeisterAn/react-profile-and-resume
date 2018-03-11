@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import WelcomeMessage from "../../components/WelcomeMessage/WelcomeMessage.jsx";
-import Statements from "../../components/Statements/Statements.jsx";
-import SocialMediaBox from "../../components/SocialMediaBox/SocialMediaBox.jsx";
+import WelcomeMessage from "../../components/WelcomeMessage/WelcomeMessage";
+import Statements from "../../components/Statements/Statements";
+import SocialMediaBox from "../../components/SocialMediaBox/SocialMediaBox";
 
 import "./ProfilePicture.scss";
 

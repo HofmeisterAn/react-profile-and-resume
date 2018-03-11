@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import Chapter from "./components/Chapter/Chapter.jsx";
+import Chapter from "./components/Chapter/Chapter";
 
 import "./Chapters.scss";
 

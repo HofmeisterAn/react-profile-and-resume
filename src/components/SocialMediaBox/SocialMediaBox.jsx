@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import SocialMediaIcon from "./components/SocialMediaIcon/SocialMediaIcon.jsx";
+import SocialMediaIcon from "./components/SocialMediaIcon/SocialMediaIcon";
 
-import { isNull } from "../../services/api/Common/index.js";
+import { isNull } from "../../services/api/Common/index";
 
 import "./SocialMediaBox.scss";
 

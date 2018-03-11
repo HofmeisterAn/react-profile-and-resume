@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 
 import { Container, Row, Col } from "reactstrap";
 
-import Categories from "../Categories/Categories.jsx";
-import Notes from "../Notes/Notes.jsx";
-import Tags from "../Tags/Tags.jsx";
+import Categories from "../Categories/Categories";
+import Notes from "../Notes/Notes";
+import Tags from "../Tags/Tags";
 
-import { isNull, toShortDate, timeSince } from "../../../../services/api/Common/index.js";
+import { isNull, toShortDate, timeSince } from "../../../../services/api/Common/index";
 
 import "./Section.scss";
 

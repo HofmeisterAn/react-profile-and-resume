@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import { Container, Row, Col } from "reactstrap";
 
-import Sections from "../../../Sections/Sections.jsx";
+import Sections from "../../../Sections/Sections";
 
 import "./Chapter.scss";
 

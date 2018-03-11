@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import { isNull } from "../../../../services/api/Common/index.js";
+import { isNull } from "../../../../services/api/Common/index";
 
 import "./Notes.scss";
 

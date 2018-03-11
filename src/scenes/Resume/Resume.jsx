@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Chapters from "../../components/Chapters/Chapters.jsx";
+import Chapters from "../../components/Chapters/Chapters";
 
 import "./Resume.scss";
 

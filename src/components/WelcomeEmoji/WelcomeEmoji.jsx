@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import Emoji from "../Emoji/Emoji.jsx";
+import Emoji from "../Emoji/Emoji";
 
 import "./WelcomeEmoji.scss";
 

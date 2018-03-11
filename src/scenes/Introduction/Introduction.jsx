@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import ProfilePicture from "../ProfilePicture/ProfilePicture.jsx";
+import ProfilePicture from "../ProfilePicture/ProfilePicture";
 
 import "./Introduction.scss";
 

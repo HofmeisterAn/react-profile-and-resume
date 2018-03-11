@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import WelcomeEmoji from "../WelcomeEmoji/WelcomeEmoji.jsx";
+import WelcomeEmoji from "../WelcomeEmoji/WelcomeEmoji";
 
-import { isNull } from "../../services/api/Common/index.js";
+import { isNull } from "../../services/api/Common/index";
 
 import "./WelcomeMessage.scss";
 

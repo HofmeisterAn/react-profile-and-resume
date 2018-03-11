@@ -6,8 +6,8 @@ import FontAwesome from "@fortawesome/fontawesome";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
 import FontAwesomeBrands from "@fortawesome/fontawesome-free-brands";
 
-import Introduction from "../scenes/Introduction/Introduction.jsx";
-import Resume from "../scenes/Resume/Resume.jsx";
+import Introduction from "../scenes/Introduction/Introduction";
+import Resume from "../scenes/Resume/Resume";
 
 import "./App.scss";
 
