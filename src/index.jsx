@@ -6,6 +6,6 @@ import "./assets/css/bootstrap.css";
 
 import "./index.scss";
 
-import App from "./scenes/App.jsx";
+import App from "./scenes/App";
 
 ReactDOM.render(<App />, document.getElementById("root"));

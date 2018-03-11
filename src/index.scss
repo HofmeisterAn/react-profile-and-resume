@@ -1,5 +1,3 @@
-@import "default.scss";
-
 /* catamaran-200 - latin */
 @font-face {
   font-family: "Catamaran";
@@ -25,4 +23,63 @@
   font-weight: 600;
   src: local("Catamaran SemiBold"), local("Catamaran-SemiBold"), url("./assets/fonts/catamaran-v4-latin-600.woff2") format("woff2"),
     url("./assets/fonts/catamaran-v4-latin-600.woff") format("woff");
+}
+
+$sans-serif: "Catamaran", Helvetica, Verdana, sans-serif;
+
+$highlight-color-1: #007bff;
+
+$highlight-color-2: #185a9d;
+
+$highlight-color-3: #43cea2;
+
+$default-font-size: 0.9em;
+
+$light-text: 200;
+
+$heavy-text: 600;
+
+$welcome-color: #fff;
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+body {
+  font-family: $sans-serif;
+}
+
+.simple-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.normal-text {
+  line-height: 1.5;
+  font-weight: $light-text;
+}
+
+.light-text {
+  font-weight: $light-text;
+}
+
+.heavy-text {
+  font-weight: $heavy-text;
+}
+
+.component {
+  padding-bottom: 1.5em;
 }

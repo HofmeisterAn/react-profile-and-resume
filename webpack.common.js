@@ -25,7 +25,15 @@ const rules = {
         modules: true
       }
     }, {
-      loader: 'sass-loader'
+      loader: 'resolve-url-loader'
+    }, {
+      loader: 'sass-loader',
+      options: {
+        sourceMap: true,
+        includePaths: [
+          path.resolve("src")
+        ]
+      }
     }]
   },
   images: {
@@ -45,6 +53,9 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public')
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'] // Resolve those extendions for modules automatically
   },
   module: {
     rules: [
