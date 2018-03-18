@@ -7,6 +7,7 @@ import "./SocialMediaIcon.scss";
 
 const propTypes = {
   url: PropTypes.string.isRequired,
+  prefix: PropTypes.string.isRequired,
   iconName: PropTypes.string.isRequired
 };
 
@@ -14,7 +15,7 @@ class SocialMediaIcon extends React.Component {
   render() {
     return (
       <a styleName="social-media-icon" href={this.props.url}>
-        <FontAwesomeIcon icon={["fab", this.props.iconName]} />
+        <FontAwesomeIcon icon={[this.props.prefix, this.props.iconName]} />
       </a>
     );
   }

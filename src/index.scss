@@ -42,15 +42,19 @@ $heavy-text: 600;
 $welcome-color: #fff;
 
 @mixin vendor-prefix($name, $argument) {
+  #{$name}: #{$argument};
   -webkit-#{$name}: #{$argument};
   -ms-#{$name}: #{$argument};
   -moz-#{$name}: #{$argument};
   -o-#{$name}: #{$argument};
-  #{$name}: #{$argument};
 }
 
 body {
   font-family: $sans-serif;
+}
+
+div:empty {
+  display: none;
 }
 
 .simple-list {
@@ -70,9 +74,12 @@ body {
 .normal-text {
   line-height: 1.5;
   font-weight: $light-text;
+  text-align: justify;
+  @include vendor-prefix(hyphens, auto);
 }
 
 .light-text {
+  line-height: 1.5;
   font-weight: $light-text;
 }
 
@@ -82,4 +89,11 @@ body {
 
 .component {
   padding-bottom: 1.5em;
+}
+
+:global {
+  .moon {
+    background-color: #191e27;
+    color: #e2e2e2;
+  }
 }

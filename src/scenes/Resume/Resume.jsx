@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import Chapters from "../../components/Chapters/Chapters";
 
+import LightSwitch from "../../components/LightSwitch/LightSwitch";
+
 import "./Resume.scss";
 
 class Resume extends React.Component {
@@ -9,8 +11,13 @@ class Resume extends React.Component {
     const profile = this.props.profile;
 
     return (
-      <div styleName="inner">
-        <Chapters chapters={profile.resume.chapters} />
+      <div>
+        <div styleName="action-bar">
+          <LightSwitch />
+        </div>
+        <div styleName="inner">
+          <Chapters chapters={profile.resume.chapters} />
+        </div>
       </div>
     );
   }

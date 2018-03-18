@@ -1,4 +1,9 @@
-@import "index.scss";
+@import "~src/index.scss";
+
+.action-bar {
+  padding-top: 2em;
+  text-align: center;
+}
 
 .inner {
   padding: 2em;

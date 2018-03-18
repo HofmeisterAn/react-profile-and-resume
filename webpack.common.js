@@ -29,10 +29,7 @@ const rules = {
     }, {
       loader: 'sass-loader',
       options: {
-        sourceMap: true,
-        includePaths: [
-          path.resolve("src")
-        ]
+        sourceMap: true
       }
     }]
   },
@@ -55,7 +52,10 @@ module.exports = {
     path: path.resolve(__dirname, 'public')
   },
   resolve: {
-    extensions: ['.js', '.jsx'] // Resolve those extendions for modules automatically
+    extensions: ['.js', '.jsx'], // Resolve those extendions for modules automatically
+    alias: {
+      src: path.resolve(__dirname, 'src') // Resole ~src for styles
+    }
   },
   module: {
     rules: [

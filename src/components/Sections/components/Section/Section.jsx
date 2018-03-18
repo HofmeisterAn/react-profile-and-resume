@@ -50,7 +50,7 @@ class Section extends React.Component {
 
     return (
       <Container fluid={true}>
-        <Row noGutters={true}>
+        <Row>
           <Col>
             <Title title={this.props.section.title} />
           </Col>

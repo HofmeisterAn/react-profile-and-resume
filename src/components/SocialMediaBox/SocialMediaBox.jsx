@@ -16,7 +16,13 @@ class SocialMediaBox extends React.Component {
     if (isNull(this.props.socials)) {
       return null;
     } else {
-      return <div>{this.props.socials.map((social, index) => <SocialMediaIcon key={index} url={social.url} iconName={social.iconName} />)}</div>;
+      return (
+        <div>
+          {this.props.socials.map((social, index) => (
+            <SocialMediaIcon key={index} url={social.url} prefix={social.prefix} iconName={social.iconName} />
+          ))}
+        </div>
+      );
     }
   }
 }
