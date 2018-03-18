@@ -33,6 +33,7 @@ class WelcomeEmoji extends React.Component {
       });
     }
   }
+
   render() {
     return (
       <span onMouseEnter={this.active} styleName={this.state.active ? "emoji animated wave" : "emoji animated"}>

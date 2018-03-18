@@ -11,19 +11,28 @@ export const profile = {
   ],
   socials: [
     {
+      url: "mailto:foo@bar.de",
+      prefix: "fa",
+      iconName: "envelope"
+    },
+    {
       url: "url",
+      prefix: "fab",
       iconName: "github"
     },
     {
       url: "url",
+      prefix: "fab",
       iconName: "stack-overflow"
     },
     {
       url: "url",
+      prefix: "fab",
       iconName: "twitter"
     },
     {
       url: "url",
+      prefix: "fab",
       iconName: "facebook"
     }
   ],

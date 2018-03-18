@@ -5,6 +5,8 @@ import { Container, Row, Col } from "reactstrap";
 import FontAwesome from "@fortawesome/fontawesome";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
 import FontAwesomeBrands from "@fortawesome/fontawesome-free-brands";
+import FontAwesomeRegular from "@fortawesome/fontawesome-free-regular";
+import FontAwesomeSolid from "@fortawesome/fontawesome-free-solid";
 
 import Introduction from "../scenes/Introduction/Introduction";
 import Resume from "../scenes/Resume/Resume";
@@ -13,7 +15,7 @@ import "./App.scss";
 
 import { profile } from "../store";
 
-FontAwesome.library.add(FontAwesomeBrands);
+FontAwesome.library.add(FontAwesomeBrands, FontAwesomeRegular, FontAwesomeSolid);
 
 class App extends React.Component {
   render() {
