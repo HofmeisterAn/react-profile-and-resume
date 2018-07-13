@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./LightSwitch.scss";
 
@@ -23,7 +23,7 @@ class LightSwitch extends React.Component {
     let isDaylight = hour >= 7 && hour <= 19;
 
     if (isDaylight != this.state.isDaylight) {
-      this.toggle();
+      //this.toggle();
     }
   }
 

@@ -1,4 +1,4 @@
-@import "~src/index.scss";
+@import "~src/default.scss";
 
 .social-media-icon {
   color: $welcome-color;
@@ -6,6 +6,8 @@
   padding: 0 0.5em;
 }
 
-a:hover {
+.social-media-icon:hover {
   color: $welcome-color;
+  background-color: transparent;
+  transition: none;
 }
