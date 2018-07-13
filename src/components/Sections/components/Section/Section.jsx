@@ -17,11 +17,19 @@ const propTypes = {
 
 class Section extends React.Component {
   render() {
-    function Title({ title }) {
+    function Title({ title, url }) {
       if (isNull(title)) {
         return null;
-      } else {
+      }
+
+      if (isNull(url)) {
         return <h6 styleName="title">{title}</h6>;
+      } else {
+        return (
+          <h6 styleName="title">
+            <a href={url}>{title}</a>
+          </h6>
+        );
       }
     }
 
@@ -44,7 +52,7 @@ class Section extends React.Component {
       if (isNull(text)) {
         return null;
       } else {
-        return <div styleName="content">{text}</div>;
+        return <div styleName="content" dangerouslySetInnerHTML={{ __html: text }} />;
       }
     }
 
@@ -52,7 +60,7 @@ class Section extends React.Component {
       <Container fluid={true}>
         <Row>
           <Col>
-            <Title title={this.props.section.title} />
+            <Title title={this.props.section.title} url={this.props.section.url} />
           </Col>
           <Col>
             <Date from={this.props.section.from} to={this.props.section.to} />

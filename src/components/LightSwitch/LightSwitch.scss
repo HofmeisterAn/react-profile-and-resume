@@ -1,7 +1,7 @@
-@import "~src/index.scss";
+@import "~src/default.scss";
 
 .light-switch,
-.light-switch > svg {
+.light-switch svg {
   @include vendor-prefix(user-select, none);
   @include vendor-prefix(transform, translate3d(0, 0, 0));
 }
@@ -10,10 +10,11 @@
   cursor: pointer;
   font-size: 1.2em;
   opacity: 0.5;
+  @include vendor-prefix(transition, opacity 0.3s);
 }
 
 .light-switch:hover {
   opacity: 1;
   @include vendor-prefix(backface-visibility, hidden);
-  @include vendor-prefix(transition, opacity 1s ease-in-out);
+  @include vendor-prefix(transition, opacity 0.3s);
 }

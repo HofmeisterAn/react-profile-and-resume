@@ -15,7 +15,24 @@ class Categories extends React.Component {
       return (
         <div styleName="category">
           <h6>{category.label}</h6>
-          <ul>{category.items.map((item, index) => <li key={index}>{item}</li>)}</ul>
+          <ul>
+            {category.items.map((item, index) => {
+              if (item.startsWith("tel:")) {
+                item = item.replace("tel:", "");
+              }
+
+              if (item.startsWith("mailto:")) {
+                item = item.replace("mailto:", "");
+                item = (
+                  <a className="underline-link" href={"mailto:" + item}>
+                    {item}
+                  </a>
+                );
+              }
+
+              return <li key={index}>{item}</li>;
+            })}
+          </ul>
         </div>
       );
     }
