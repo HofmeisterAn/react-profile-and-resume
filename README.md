@@ -8,11 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-This project requires [Node.js](https://github.com/nodejs/node).
-
-###
-
-Run `npm install` to install all dependencies. To execute the web application run `npm run prod` for production and `npm run dev` for development mode.
+This project requires [Node.js](https://github.com/nodejs/node). Run `npm install` to install all dependencies. To execute the web application run `npm run prod` for production and `npm run dev` for development mode.
 
 ## Authors
 
