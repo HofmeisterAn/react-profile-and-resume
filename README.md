@@ -12,7 +12,7 @@ This project requires [Node.js](https://github.com/nodejs/node). Run `npm instal
 
 ## Authors
 
-* **Andre Hofmeister** - *Initial work* - [padme-amidala](https://github.com/padme-amidala/)
+* **Andre Hofmeister** - *Initial work* - [HofmeisterAn](https://github.com/HofmeisterAn/)
 
 ## License
 
